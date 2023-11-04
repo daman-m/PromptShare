@@ -1,6 +1,8 @@
 'use client'
 import Link from "next/link"
 import Image from "next/image"
+import '@styles/globals.css';
+
 import { useState, useEffect } from "react"
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react'
 
@@ -138,10 +140,6 @@ const Nav = () => {
           </>
         )}
       </div>
-
-
-
-
     </nav>
   )
 }
