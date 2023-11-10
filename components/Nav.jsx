@@ -24,15 +24,14 @@ const Nav = () => {
         <Image
           src="/assets/images/logo.svg"
           alt="PromptShare Logo"
-          width={30}
-          height={30}
+          width={150}
+          height={150}
           className="object-contain"
         />
-        <p className="logo_text"> PromptShare</p>
+        {/* <p className="logo_text"> PromptShare</p> */}
       </Link>
 
-      {console.log('session', session)}
-      {console.log('provider', providers)}
+     
 
       {/* Desktop Nav */}
       <div className="sm:flex hidden">
