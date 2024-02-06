@@ -27,8 +27,9 @@ const Feed = () => {
   const [posts, setPosts] = useState([])
 
   const handleSearchChange = (e) => {
-    e.preventDefault
-    }
+    e.preventDefault(); 
+    setSearchText(e.target.value);
+  };
   
   useEffect(() => {
     const fetchPosts = async () => {
@@ -58,7 +59,6 @@ const Feed = () => {
       data={posts}
       handleTagClick={()=>{}} 
       />
-
     </section>
   )
 }
